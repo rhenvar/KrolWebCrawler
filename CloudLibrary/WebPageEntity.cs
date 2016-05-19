@@ -16,12 +16,13 @@ namespace CloudLibrary
         public WebPageEntity(string url, DateTime date, string title)
         {
             this.PartitionKey = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(url));
-            this.RowKey = Guid.NewGuid().ToString();
+            this.RowKey = "DUMMY KEY";
 
             this.Url = url;
             this.Date = date;
             this.Title = title;
         }
+
         public WebPageEntity() { }
     }
 }

@@ -12,14 +12,12 @@ namespace CrawlerWorkerRole
 {
     public class ThreadWorker
     {
+        public string Status { get; set; }
+
         internal void RunInternal()
         {
             try
             {
-                WorkerRole.htmlQueue.CreateIfNotExists();
-                WorkerRole.forbiddenQueue.CreateIfNotExists();
-                WorkerRole.errorQueue.CreateIfNotExists();
-                WorkerRole.urlTable.CreateIfNotExists();
                 Run();
             }
             catch (SystemException)

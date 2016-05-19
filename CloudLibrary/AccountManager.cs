@@ -1,5 +1,6 @@
 ﻿using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
+using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace CloudLibrary
     {
         public static CloudStorageAccount storageAccount { get; private set; }
         public static CloudQueueClient queueClient { get; private set; }
-        private static string connString = "DefaultEndpointsProtocol=https;AccountName=krolazurestorage;AccountKey=M6JxbA+o55darToYsonq2T2aTgbn0ZZZc9NgArCiht7V32cOa+yze/zMIcoofu2oYFM4QQLHU3aaMhEMXfhraw==";
+        public static CloudTableClient tableClient { get; private set; }
+        private static string connString = "DefaultEndpointsProtocol=https;AccountName=krolcloudservicestorage;AccountKey=kxqrhi5PjnIzniLNN4Spe5l4AmLZyutTgYmOkg5e0hWwBYOIYK9KgqDYnHzrqXvEoAHT0dpsQLN3wIk1gUeHEg==";
 
         static AccountManager()
         {
@@ -20,6 +22,7 @@ namespace CloudLibrary
             {
                 storageAccount = CloudStorageAccount.Parse(connString);
                 queueClient = storageAccount.CreateCloudQueueClient();
+                tableClient = storageAccount.CreateCloudTableClient();
             }
             catch (Exception e)
             {

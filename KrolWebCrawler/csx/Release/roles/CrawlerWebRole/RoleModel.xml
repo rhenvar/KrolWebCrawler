@@ -15,14 +15,14 @@
     <Property name="SetConfiguration" value="Configuration=Release" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5" />
-    <Property name="OutputDir" value="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWebRole\" />
+    <Property name="OutputDir" value="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWebRole\" />
     <Property name="EntryPoint" value="CrawlerWebRole.dll" />
-    <Property name="SourceDir" value="C:\Users\iGuest\Desktop\KrolWebCrawler\CrawlerWebRole\" />
-    <Property name="SitePhysicalPath" value="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWebRole\" />
+    <Property name="SourceDir" value="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\CrawlerWebRole\" />
+    <Property name="SitePhysicalPath" value="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWebRole\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWebRole\">
+    <Site name="Web" physicalDirectory="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWebRole\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

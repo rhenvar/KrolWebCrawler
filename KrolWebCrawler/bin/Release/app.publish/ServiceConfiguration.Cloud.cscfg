@@ -10,7 +10,7 @@
 -->
 <ServiceConfiguration serviceName="KrolWebCrawler" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
   <Role name="CrawlerWorkerRole">
-    <Instances count="1" />
+    <Instances count="4" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=krolcloudservicestorage;AccountKey=kxqrhi5PjnIzniLNN4Spe5l4AmLZyutTgYmOkg5e0hWwBYOIYK9KgqDYnHzrqXvEoAHT0dpsQLN3wIk1gUeHEg==" />
     </ConfigurationSettings>

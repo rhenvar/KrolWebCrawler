@@ -15,7 +15,7 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\rcf\Release\CrawlerWorkerRoleContent\" />
+        <SourceDirectory path="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\rcf\Release\CrawlerWorkerRoleContent\" />
       </Content>
     </Contents>
   </WorkerRole>
@@ -35,7 +35,7 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\rcf\Release\CrawlerWebRoleContent\" />
+        <SourceDirectory path="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\rcf\Release\CrawlerWebRoleContent\" />
       </Content>
     </Contents>
   </WebRole>

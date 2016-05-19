@@ -10,10 +10,12 @@ namespace CloudLibrary
     public class ConcurrentSet<T>
     {
         private ConcurrentDictionary<T, int> dictionary;
+        public int Size { get; private set; }
 
         public ConcurrentSet()
         {
             dictionary = new ConcurrentDictionary<T, int>();
+            Size = 0;
         }
 
         public bool Contains(T t)
@@ -26,6 +28,7 @@ namespace CloudLibrary
             if (!Contains(t))
             {
                 dictionary.TryAdd(t, 0);
+                Size++;
             }
         }
     }

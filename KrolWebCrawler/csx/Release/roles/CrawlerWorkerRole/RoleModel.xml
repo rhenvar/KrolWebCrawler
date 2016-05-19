@@ -13,7 +13,7 @@
     <Property name="Configuration" value="Release" />
     <Property name="Platform" value="AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5" />
-    <Property name="OutputDir" value="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWorkerRole\" />
+    <Property name="OutputDir" value="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\obj\Release\CrawlerWorkerRole\" />
     <Property name="EntryPoint" value="CrawlerWorkerRole.dll" />
     <Property name="SourceDir" value="" />
     <Property name="SitePhysicalPath" value="" />

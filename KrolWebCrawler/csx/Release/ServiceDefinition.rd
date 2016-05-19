@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KrolWebCrawler" generation="1" functional="0" release="0" Id="9b76eedd-499e-412b-943c-1cc555f6d44a" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KrolWebCrawler" generation="1" functional="0" release="0" Id="2180516b-b021-408b-9014-7fd877f52fc5" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="KrolWebCrawlerGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -62,7 +62,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="CrawlerWebRole" generation="1" functional="0" release="0" software="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\csx\Release\roles\CrawlerWebRole" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="CrawlerWebRole" generation="1" functional="0" release="0" software="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\csx\Release\roles\CrawlerWebRole" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -82,7 +82,7 @@
           </sCSPolicy>
         </groupHascomponents>
         <groupHascomponents>
-          <role name="CrawlerWorkerRole" generation="1" functional="0" release="0" software="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\csx\Release\roles\CrawlerWorkerRole" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
+          <role name="CrawlerWorkerRole" generation="1" functional="0" release="0" software="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\csx\Release\roles\CrawlerWorkerRole" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
             <settings>
               <aCS name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="" />
               <aCS name="__ModelData" defaultValue="&lt;m role=&quot;CrawlerWorkerRole&quot; xmlns=&quot;urn:azure:m:v1&quot;&gt;&lt;r name=&quot;CrawlerWebRole&quot;&gt;&lt;e name=&quot;Endpoint1&quot; /&gt;&lt;/r&gt;&lt;r name=&quot;CrawlerWorkerRole&quot; /&gt;&lt;/m&gt;" />
@@ -110,9 +110,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="097fe337-3df4-4246-a3c7-8adfa3a3e470" ref="Microsoft.RedDog.Contract\ServiceContract\KrolWebCrawlerContract@ServiceDefinition">
+    <implementation Id="13250c35-de05-49be-ba4f-33195a93199f" ref="Microsoft.RedDog.Contract\ServiceContract\KrolWebCrawlerContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="091266bf-5492-4843-a686-6546f71252d6" ref="Microsoft.RedDog.Contract\Interface\CrawlerWebRole:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="3a517dbf-814f-4b0b-a55c-29dda43b4fb1" ref="Microsoft.RedDog.Contract\Interface\CrawlerWebRole:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/KrolWebCrawler/KrolWebCrawlerGroup/CrawlerWebRole:Endpoint1" />
           </inPort>

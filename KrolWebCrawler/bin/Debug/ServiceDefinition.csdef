@@ -15,9 +15,15 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\rcf\Debug\CrawlerWorkerRoleContent\" />
+        <SourceDirectory path="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\rcf\Debug\CrawlerWorkerRoleContent\" />
+      </Content>
+      <Content destination=".\">
+        <SourceDirectory path="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\ecf\CrawlerWorkerRoleContent\" />
       </Content>
     </Contents>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
   </WorkerRole>
   <WebRole name="CrawlerWebRole" vmsize="Small">
     <Sites>
@@ -35,8 +41,14 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\iGuest\Desktop\KrolWebCrawler\KrolWebCrawler\rcf\Debug\CrawlerWebRoleContent\" />
+        <SourceDirectory path="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\rcf\Debug\CrawlerWebRoleContent\" />
+      </Content>
+      <Content destination=".\">
+        <SourceDirectory path="C:\Users\rhenvar\Source\Repos\KrolWebCrawler\KrolWebCrawler\ecf\CrawlerWebRoleContent\" />
       </Content>
     </Contents>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
   </WebRole>
 </ServiceDefinition>
